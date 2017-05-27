@@ -1,16 +1,7 @@
 #cloud-config
 # Adds SSH keys to the rancher user
 ssh_authorized_keys:
-  - ssh-rsa ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDV2a/HweC5qYEbN8cNrSz4Im4oSekao0hGwhkuLulACUlRLgpwbu2oOWOiAcBDxm12D3xzsHwnrabDVKcaJ5RgHj118eUMAfAxLUj8S+P5pY80YcOIugVDvcP+8b53vHQ5iF16sKyJBEmpDsTDHUc5/7mcrDJBSji5AlbVuMhSYiHijwixG1iZvN0iJPMKUMWEHUUlBkzexGsSexbCy8TAvSzaQMQ7Kr+LxrCVQ19ZYgMY2XbJMWCAAu36ksXITIjDm06A06ZhclXrOxZddr2p49bAtkMD7AdpPRurLvKFkOiC619kvwi5N8jQXDJjar3RVGnyR5rrD5Bme6/xZJeJ hugo.pinh@live.com
-rancher:
-  network:
-    interfaces:
-      eth*:
-        dhcp: false
-      eth0:
-        address: 10.10.0.112/24
-        gateway: 10.10.0.3
-        mtu: 1500
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMCmo4bGBYEuoJ75BvzanBq0olKsUdBEtuODaf3+1Ba0Fmr7lgRQ8tscCiZ0pJn8mFgcz4vDxeXACMUXApElIXI8SQJhBWcge1/wbE/eLTtac0mEoJWNpifddlJLLYc0q2AG1mJgeraUFgvNp1rFowyKGJan1TKDeeL07BXT9yR38RGBEaWOI4suZn+uLJUZFUnZBfrSwsKxGUMUmICozt/+a3L9K7N58x/SVF9bP8WjpNCsH+yPYnqFrFUDOVjqeX8mQ+6ScPaIp98k3Ut5yzgXcVRtfOEO+Xag6qibqtD5fiWMjPqTZJZ+1fB3vZE55HO9XGiZRNFSqmnZo0mLjr ricardo@ricardopaiva.com
 dns:
       nameservers:
         - 8.8.8.8
